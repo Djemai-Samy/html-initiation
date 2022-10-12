@@ -152,3 +152,9 @@ le plus souvent par paire, car comme nous l’avons dit, elles servent à encadr
 
 Il existe donc une balise ouvrante pour signifier le début d’un élément et
 une balise fermante pour en signifier la fin.
+
+---
+
+## aller plus loin
+
+[Suivant: HTML: Les textes](https://djemai-samy.com/2.html-texts.article)
