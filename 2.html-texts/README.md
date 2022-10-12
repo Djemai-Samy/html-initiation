@@ -35,8 +35,6 @@ Cet article explique comment HTML peut être utilisé pour structurer une page e
 
 ## 1/ Les titres
 
-### 1.1/ Premiers éléments
-
 Il y a 6 éléments de titre — `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, et `<h6>`.
 
 Chaque élément représente un niveau de titre différent:
@@ -113,8 +111,7 @@ De même, dans le langage écrit, nous avons tendance à mettre un certain accen
 En HTML, nous utilisons l'élément `<em>` (emphase) pour mettre du texte en italique:
 
 ```html
-<h1>Un titre intéressant!</h1>
-<p>Un paragraphe avec du contenu de qualité.</p>
+<p>Je suis <em>content</em> que vous n'ayez pas été <em>en retard</em>.</p>
 ```
 
 ### 2.1/ Texte en gras
@@ -160,19 +157,19 @@ Prenons par exemple une liste de courses :
 - Sucre
 - Sel
 
-Les listes non-ordonnées débutent par un élément ```<ul>``` (unordered list) qui enveloppe tous les éléments de la liste.
+Les listes non-ordonnées débutent par un élément `<ul>` (unordered list) qui enveloppe tous les éléments de la liste.
 
-Chaque élément (item) est contenu dans une balise ```<li>``` (list item) :
+Chaque élément (item) est contenu dans une balise `<li>` (list item) :
 
 ```html
 <ul>
-    <li>Lait</li>
-    <li>œufs</li>
-    <li>Farine</li>
-    <li>Beurre</li>
-    <li>Sucre</li>
-    <li>Sel</li>
-</ul>  
+  <li>Lait</li>
+  <li>œufs</li>
+  <li>Farine</li>
+  <li>Beurre</li>
+  <li>Sucre</li>
+  <li>Sel</li>
+</ul>
 ```
 
 ### 3.2/ Listes ordonnées
@@ -186,37 +183,27 @@ Les listes ordonnées permettent de représenter des listes dans lesquelles l'or
 3. Commencez à mélanger. Quand le mélange est épais, ajoutez le lait froid petit à petit.
 
 4. Ajoutez ensuite le beurre fondu refroidi, mélangez bien.
-Faites cuire les crêpes dans une poêle chaude.
+   Faites cuire les crêpes dans une poêle chaude.
 
-Les listes ordonnées débutent par un élément ```<ol>``` (ordered list) qui enveloppe tous les éléments de la liste :
+Les listes ordonnées débutent par un élément `<ol>` (ordered list) qui enveloppe tous les éléments de la liste :
 
 ```html
 <ol>
-    <li>
-        Mettez la farine dans un saladier avec le sel et le sucre.
-    </li>
-    <li>
-        Faites un puits au milieu et versez-y les œufs.
-    </li>
-    <li>
-        Commencez à mélanger. Quand le mélange est épais, ajoutez le lait froid petit à petit.
-    </li>
-    <li>
-        Ajoutez ensuite le beurre fondu refroidi, mélangez bien.
-    </li>
-    <li>
-        Faites cuire les crêpes dans une poêle chaude.
-    </li>
-</ol>  
+  <li>Mettez la farine dans un saladier avec le sel et le sucre.</li>
+  <li>Faites un puits au milieu et versez-y les œufs.</li>
+  <li>
+    Commencez à mélanger. Quand le mélange est épais, ajoutez le lait froid petit à petit.
+  </li>
+  <li>Ajoutez ensuite le beurre fondu refroidi, mélangez bien.</li>
+  <li>Faites cuire les crêpes dans une poêle chaude.</li>
+</ol>
 ```
 
 ---
 
 ## Conclusion
 
-Cet article doit vous avoir donné une bonne idée de la façon de commencer à baliser le texte en HTML et présenté les éléments les plus importants dans ce domaine.
-
-Il existe énormément d'autres éléments sémantiques à connaître dans ce domaine.
+Cet article doit vous avoir donné une bonne idée de la façon de commencer à baliser le texte en HTML et présenté les éléments les plus importants. Il existe énormément d'autres éléments sémantiques à connaître.
 
 ---
 
