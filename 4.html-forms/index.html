@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4/ HTML: Les formulaire</title>
+  </head>
+  <body>
+    <h1>4/ HTML: Les formulaire</h1>
+
+    <h2>Champ utilisateur simple</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="user_name" placeholder="Entrez votre nom..." />
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type email</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label for="email">Email: </label>
+
+      <input type="email" name="email" id="email" placeholder="exemple@exemple.com" />
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type password</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label> Mot de passe: </label>
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Entrez une mot de passe"
+      />
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type date</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label for="date">Date: </label>
+
+      <input type="date" name="date" id="date" />
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type checkbox</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <fieldset>
+        <legend>Sélectionnez des cours:</legend>
+
+        <input type="checkbox" id="html" name="html" value="html" checked />
+        <label for="html">HTML</label>
+
+        <br />
+
+        <input type="checkbox" id="css" name="css" value="css" />
+        <label for="css">CSS</label>
+
+        <br />
+
+        <input type="checkbox" id="javascript" name="javascript" value="javascript" />
+        <label for="javascript">Javascript</label>
+      </fieldset>
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type radio</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <fieldset>
+        <legend>Sélectionnez votre cours préféré:</legend>
+
+        <input type="radio" id="html" name="cours" value="html" />
+        <label for="html">HTML</label>
+
+        <br />
+
+        <input type="radio" id="css" name="cours" value="css" />
+        <label for="css">CSS</label>
+
+        <br />
+
+        <input type="radio" id="javascript" name="cours" value="javascript" />
+        <label for="javascript">Javascript</label>
+      </fieldset>
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type file</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label for="avatar">Choisissez une image:</label>
+
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+      <button>Valider</button>
+    </form>
+
+    <h2>Champ utilisateur de type range</h2>
+    <form action="/ma-page-de-traitement" method="post">
+      <label for="volume">Volume:</label>
+
+      <input type="range" id="volume" name="volume" min="0" max="10" />
+      <button>Valider</button>
+    </form>
+  </body>
+</html>

@@ -8,6 +8,7 @@ Plusieurs cours et tutoriels pour apprendre à structurer vos pages web en utili
 
 - [HTML: Les textes](https://djemai-samy.com/blog/2.html-texts.article)
 - [HTML: Les médias](https://djemai-samy.com/blog/3.html-medias.article)
+- [HTML: Les formulaires](https://djemai-samy.com/blog/4.html-forms.article)
 
 ---
 
@@ -18,5 +19,7 @@ Plusieurs cours et tutoriels pour apprendre à structurer vos pages web en utili
 - [HTML: Les textes](https://github.com/Djemai-Samy/html-initiation/tree/main/2.html-texts)
 
 - [HTML: Les médias](https://github.com/Djemai-Samy/html-initiation/tree/main/2.html-texts)
+
+- [HTML: Les formulaires](https://github.com/Djemai-Samy/html-initiation/tree/main/4.html-forms)
 
 ---
