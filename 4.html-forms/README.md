@@ -56,22 +56,10 @@ Pour commencer, ajoutons a notre page un simple formulaire avec un champs texte 
 </form>
 ```
 
-&nbsp;
-
-<form >
-  <label for="name">Nom: </label>
-  <input type="text" id="name" name="user_name" placeholder="Entrez votre nom..."/>
-  <button >Valider</button>
-</form>
-
-&nbsp;
-
 - L'attribut ```for``` sur tous les éléments ```<label>```, est une manière formelle de lier un libellé à un élément du formulaire. Cet attribut fait référence à l'id de l'élément correspondant.
 - Dans l'éléments ```<input>```:
   - ```type```: Dans notre exemple nous n'utilisons que la valeur text et représente un champ de texte basique sur une seule ligne acceptant n'importe quel type de texte.
   - ```placeholder```: Permet d'afficher du texte quand le champs est vide.
-
-&nbsp;
 
 Il est possible de renseigner une valeur au champ en utilisant l'attribut ```value```:
 
@@ -90,18 +78,6 @@ Il est possible de renseigner une valeur au champ en utilisant l'attribut ```val
 
 </form>
 ```
-
-&nbsp;
-
-<form>
-  <label for="name">Nom: </label>
-  <input  id="name" 
-          type="text" 
-          name="user_name" 
-          placeholder="Entrez votre nom..." 
-          value="Doe"/>
-  <button>Valider</button>
-</form>
 
 ---
 
@@ -122,16 +98,6 @@ Un champ qui permet de saisir une adresse électronique, il ressemble à un cham
     placeholder="exemple@exemple.com" />
 ```
 
-<form>
-  <label htmlFor="email">Email: </label>
-
-  <input type="email" 
-          id="email" 
-          name="email" 
-          placeholder="exemple@exemple.com"/>
-  <button>Valider</button>
-</form>
-
 ---
 
 ### 3.2/ Le type password
@@ -149,20 +115,6 @@ Un champ texte sur une seule ligne dont la valeur est masquée et qui affichera 
     placeholder="Entrez un mot de passe" />
 ```
 
-Resultat:
-
-<form>
-  <label>
-    Mot de passe:
-  </label>
-
-  <input  type="password"
-          id="password"
-          name="password"
-          placeholder="Entrez une mot de passe"/>
-  <button>Valider</button>
-</form>
-
 ---
 
 ### 3.3/ Le type date
@@ -178,15 +130,6 @@ Cela ouvre un sélecteur de date ou des roues numériques pour la sélection du 
     name="date" 
     id="date"/>
 ```
-
-<form>
-  <label for="date">Date: </label>
-
-  <input  type="date" 
-          id="date" 
-          name="date" />
-  <button>Valider</button>
-</form>
 
 ---
 
@@ -212,25 +155,6 @@ Une case à cocher qui permet de sélectionner/désélectionner une valeur.
     <label for="javascript">Javascript</label>
 </fieldset>
 ```
-
-<form>
-<fieldset>
-  <legend>Sélectionnez des cours:</legend>
-
-  <input type="checkbox" id="HTML" name="HTML" checked/>
-  <labelfor="HTML">HTML</label>
-
-  <br/>
-
-  <input type="checkbox" id="CSS" name="CSS"/>
-  <label for="CSS">CSS</label>
-  
-  <br/>
-
-  <input type="checkbox" id="javascript" name="javascript"/>
-  <label for="javascript">Javascript</label>
-</fieldset>
-</form>
 
 ---
 
@@ -269,26 +193,6 @@ Les « boutons radio » sont représentés par des cercles remplis lorsqu'ils so
 </fieldset>
 ```
 
-<form>
-<fieldset>
-<legend>Sélectionnez votre cours préféré:</legend>
-
-<input type="radio" id="HTML" name="cours" checked/>
-<labe for="HTML">HTML</label>
-
-<br/>
-
-<input type="radio" id="CSS" name="cours"/>
-<label for="CSS">CSS</label>
-
-<br/>
-
-<input type="radio" id="javascript" name="cours"/>
-<label for="javascript">Javascript</label>
-
-</fieldset>
-</form>
-
 Il est possible d'avoir autant de groupes que nécessaire, il suffit que chaque groupe ait un nom (l'attribut name) unique.
 
 Lorsqu'on envoie le formulaire précédent avec une option sélectionnée, les données du formulaire contiendront une valeur sous la forme ```cours=valeur```.
@@ -307,14 +211,6 @@ Les éléments ```<input>``` dont l'attribut type vaut "file" permettent à un u
         accept="image/png, image/jpeg">
 ```
 
-<form>
-<label for="avatar">Choisissez une image:</label>
-
-<input type="file"
-    id="avatar" name="avatar"
-    accept="image/png, image/jpeg"/>
-</form>
-
 - ```value```: L'attribut contient une chaîne de caractères (DOMString) qui représente le chemin du/des fichier(s) sélectionné(s).
 - ```accept```: Un ou plusieurs identifiants de type de fichier décrivants les types de fichier autorisés.
 
@@ -322,8 +218,8 @@ Les éléments ```<input>``` dont l'attribut type vaut "file" permettent à un u
 
 ### 3.7/ Le type range
 
-Les éléments ```<input>``` dont l'attribut type vaut range permettent à l'utilisatrice ou l'utilisateur d'indiquer une valeur numérique comprise entre deux bornes. 
-            
+Les éléments ```<input>``` dont l'attribut type vaut range permettent à l'utilisatrice ou l'utilisateur d'indiquer une valeur numérique comprise entre deux bornes.
+
 ```html
 <label for="volume">Volume:</label>
 
@@ -333,12 +229,6 @@ Les éléments ```<input>``` dont l'attribut type vaut range permettent à l'uti
         min="0" 
         max="10"/>
 ```
-
-<form>
-<label for="range">Volume:</label>
-
-<input type="range" id="volume" name="volume" min="0" max="10"/>
-</form>
 
 - ```min```: La plus petite valeur autorisée sur l'intervalle. Si la valeur saisie dans le champ (représentée par l'attribut value) est inférieure à ce seuil, la validation échouera (en-US).
 - ```max```: La plus grande valeur autorisée sur l'intervalle. Si la valeur saisie dans le champ (représentée par l'attribut value) dépasse ce seuil, la validation échouera (en-US).
